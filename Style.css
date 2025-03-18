@@ -1,0 +1,224 @@
+/* ======================== */
+/* Estilos Gerais */
+/* ======================== */
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('Images/IMGFundo.png') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center -50px;
+    transition: background 1s ease-in-out;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7),
+                 -2px -2px 0px rgba(0, 0, 0, 0.7),
+                 2px -2px 0px rgba(0, 0, 0, 0.7),
+                 -2px 2px 0px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-auto-rows: min-content;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* ======================== */
+/* Estilos dos Cards */
+/* ======================== */
+.card {
+    padding: 20px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border-radius: 6px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 260px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* ======================== */
+/* Barra de Progresso */
+/* ======================== */
+
+/* ======================== */
+/* Barra de Progresso */
+/* ======================== */
+
+.progress-container {
+    position: relative;
+    width: 220px;
+    height: 25px;
+    background: #fff; /* Painel branco atrás */
+    border-radius: 12px;
+}
+
+.progress-bar {
+    position: relative;
+    width: 100%; /* Alterado para ocupar todo o container */
+    height: 25px;
+    background: linear-gradient(90deg, #4caf50, #8bc34a); /* Gradiente da barra */
+    border-radius: 12px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+.progress-bar span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #000; /* Cor da letra da porcentagem alterada para preto */
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+
+/* ======================== */
+/* Menu Lateral */
+/* ======================== */
+/* ======================== */
+/* Menu Hambúrguer */
+/* ======================== */
+.menu-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.menu-btn div {
+    width: 35px;
+    height: 6px;
+    background: #fff;
+    margin: 6px 0;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de animação do hambúrguer */
+.menu-btn.open div:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.menu-btn.open div:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.open div:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* ======================== */
+/* Menu Lateral */
+/* ======================== */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 400px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 25px;
+    transition: left 0.3s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu.open {
+    left: 0;
+}
+
+/* Estilos dos itens do menu */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.menu ul li {
+    margin: 50px 0;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.menu ul li a:hover {
+    color: #007bff;
+    transform: translateX(5px);
+}
+
+/* ======================== */
+/* Tela de Fundo (Screen) */
+/* ======================== */
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+}
