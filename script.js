@@ -1,10 +1,6 @@
 const urls = [
     "https://script.google.com/macros/s/AKfycbyVlKGZydz7K1rQc3KgTvIlK-YHJyp2baML927Cul0Y3NzoJNGFEobCZqvYxdtKF2mz/exec", 
     "https://script.google.com/macros/s/AKfycbywA6YEvDO8no50zTuwkiwP1sTKYC4hYw91ptAiQK5LDtqc3iSsj28fR5NLtxphDz45/exec",
-    "https://script.google.com/macros/s/AKfycbzAuWk7risCAf8HTx3INK1CUtol43kAoSHCeWPILbZhUGZUga9falkENVlRFzc5hGaB/exec",
-    "https://script.google.com/macros/s/AKfycbxCAzkjNIzf9S8lvhxnWw35d1PRBu9ydk4Me8YHvvaGcW46e1ciDSyQXSpBs66HKMHk/exec",
-    "https://script.google.com/macros/s/AKfycbzv5jzWIPa6_ERXCuwOrBDR-GDnAxTsm1oHZbskWwjn04y8OORnpe2stp-MhjEs63_P/exec",
-    "https://script.google.com/macros/s/AKfycbxBT46dRt1Q-qosr7t38B89VfWx41qPelrQ7oiKdo209wNYxq37zutAsohiUzQq53hX/exec",
     "https://script.google.com/macros/s/AKfycbx2qV1HH-utAe7-PRzj3k-2PUbW5T1I6OLSfn1Yms6VF2ihqr_KnnobNJSm4h7CNJjf/exec",
     "https://script.google.com/macros/s/AKfycbyKyrFmCUsVsSri4X5dx8G8l4XgMG8unmEJFTVeliHMkOj4aIqTFWsDZma_OU75J6Sx/exec",
     "https://script.google.com/macros/s/AKfycbywMGhm6uwaHiS5W7bo9r7hpwPskQFlokbW-k7x1eqYk_Z1tp2STuWWvsnt5NTRZcuI/exec",
@@ -15,7 +11,7 @@ const urls = [
     "https://script.google.com/macros/s/AKfycbxsvc7zoEMkjMVOdKQH06Fqr5sVyRkB6WOAd_SVSkLJok43qceoorGzQM6JbyCRwyOF/exec",
 ];
 
-const telas = ["tela1","tela2", "tela3","tela4", "tela5", "tela6", "tela7", "tela8", "tela9", "tela10", "tela11", "tela12", "tela13", "tela14", ];
+const telas = ["tela1","tela2", "tela7", "tela8", "tela9", "tela10", "tela11", "tela12", "tela13", "tela14", ];
 
 // Função para carregar os dados de todas as telas
 async function carregarDados() {
