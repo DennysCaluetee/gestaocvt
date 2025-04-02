@@ -1,17 +1,15 @@
 const urls = [
-    "https://script.google.com/macros/s/AKfycbyVlKGZydz7K1rQc3KgTvIlK-YHJyp2baML927Cul0Y3NzoJNGFEobCZqvYxdtKF2mz/exec", 
-    "https://script.google.com/macros/s/AKfycbywA6YEvDO8no50zTuwkiwP1sTKYC4hYw91ptAiQK5LDtqc3iSsj28fR5NLtxphDz45/exec",
-    "https://script.google.com/macros/s/AKfycbx2qV1HH-utAe7-PRzj3k-2PUbW5T1I6OLSfn1Yms6VF2ihqr_KnnobNJSm4h7CNJjf/exec",
-    "https://script.google.com/macros/s/AKfycbyKyrFmCUsVsSri4X5dx8G8l4XgMG8unmEJFTVeliHMkOj4aIqTFWsDZma_OU75J6Sx/exec",
-    "https://script.google.com/macros/s/AKfycbywMGhm6uwaHiS5W7bo9r7hpwPskQFlokbW-k7x1eqYk_Z1tp2STuWWvsnt5NTRZcuI/exec",
-    "https://script.google.com/macros/s/AKfycbwaPtnPA4eTJ0cDPGonNEuPo9xw3iHMUGIjtPyDcH0bkfqeuVX1eZuyEKyIJ1sHStYn/exec",
-    "https://script.google.com/macros/s/AKfycbxqMCghB0oE-lq6tK7-etXyTJIZ3BP1UNetiKCDzZc4yUC1JKG4TIxBscw4liMhjjOr/exec",
-    "https://script.google.com/macros/s/AKfycbySuGUWLlQRfj4It6pOH131450jEYu_o8Dbo4lJYv41Pzll46ZiGmA2_M8AviiFPUqM/exec",
-    "https://script.google.com/macros/s/AKfycbwjsUGY2h_oc05Ah59HttU_zAorVA_FuqfTvPy849gajmznLNqL7_yDdZQ54TtbTpgg/exec",
-    "https://script.google.com/macros/s/AKfycbxsvc7zoEMkjMVOdKQH06Fqr5sVyRkB6WOAd_SVSkLJok43qceoorGzQM6JbyCRwyOF/exec",
-];
-
-const telas = ["tela1","tela2", "tela7", "tela8", "tela9", "tela10", "tela11", "tela12", "tela13", "tela14", ];
+    "https://script.google.com/macros/s/AKfycbyVlKGZydz7K1rQc3KgTvIlK-YHJyp2baML927Cul0Y3NzoJNGFEobCZqvYxdtKF2mz/exec", // interface
+    "https://script.googleusercontent.com/a/macros/ebdicorp.com.br/echo?user_content_key=AehSKLivUkOubCdosh5aCwRkUBoQKW2naKZgTd76GKJE4LmhYHPRl0B4kI8agNXVxyUzIKrjPl-G7LzGFzTQ_urz_UtxK_MwyeXtb3UMXOEuLnuGxtAZl7BZzspGrJNeJrgBjzncdJv7Vyg6RYpnlC2PhUtehnhMycHVJStpsT_lMv7N1iOae97uuCZqZCxKNBqTFzQsDXAJoWYRvv5a6ppCzLl1q85yiO2FhvUIOPoe-PCUchhrgolwPM3PxH3M6M0Vt1S2DVsP0bFh-UGitWxjYM00OyUVw9qzooZAC9Hy-MKbRh4Is_eC_d_CCTCS7Q&lib=MkqVb0B2Pj277gHbDBh6U8aNWmXF4loPg", // PM - DELAWARE 2025 imp
+    "https://script.google.com/macros/s/AKfycbyrmAcmr4hz1WjESuN6HEJNtwS968-F761YHc0YoEziq9VznDI03JuX6ll6HehArYuk/exec", //implementação  DOCUSIGN 10/04
+    "https://script.google.com/macros/s/AKfycbwJXHcIHTpAkbCEZzDUshYTa3VXKzQCi8Q3nNktifubt4sVYOMCyPOl62_4sZyYvhzt/exec", //implementação  Equinix 15/04
+    "https://script.google.com/macros/s/AKfycbzQivMZRx6HmklYTE_SEX0Ya8Q5C0r4FiSZ0DAqoFO4THkQpEii8GGOO4JMXa6Q0L0/exec", // Outsystems 16.04
+    "https://script.google.com/macros/s/AKfycbznldRpGqqXwN-FB5VtdEwesqrX7BL71wiQ8kHIIviyP4nJWD8jYLdNW5OscMvcSdOR/exec", // Snowflake 23.04
+    "https://script.google.com/macros/s/AKfycbxJYfiI7Jck3Tf6hZNwrvAkzLWMPMCs784SEaCNd_FlxQjGaBc9mAvyWvEy5imSbF57/exec", // PROVENIR 24/04
+    "https://script.google.com/macros/s/AKfycbwroToctf-OFm8bTg593DgvEtxwQ1D3ttWJhEDASVBGbq4Qz62X1DAgQmaXnCZKw3xR/exec", // Genesys 24.04
+    "https://script.google.com/macros/s/AKfycbxERaUNrtYseVyS8_iLJ2ndPwvSGgRwJZfR472h9iEMuCuGaZwnYroR6Ij7IKwB3_F4/exec", //  Agência Multiedro 29.04
+]
+const telas = ["tela1","tela2","tela3", "tela4", "tela5", "tela6", "tela7", "tela8", "tela9"];
 
 // Função para carregar os dados de todas as telas
 async function carregarDados() {
